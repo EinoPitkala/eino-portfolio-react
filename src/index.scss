@@ -1,0 +1,107 @@
+$primary-color: #2098EF;
+$text-color: #ffffff;
+$bg-color: #111111;
+$light-color: #222222;
+$gradient-start: #2098EF;
+$gradient-end: #4E2DD1;
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $bg-color;
+  color: $text-color;
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+.navbar {
+  width: 100%;
+  background-color: $bg-color;
+  border-radius: 0px 0px 15px 15px;
+}
+.nav-content {
+  padding: 10px 20vw;
+  display: flex;
+  img {
+    width: 100px;
+    height: 100px;
+  }
+  justify-content: space-between;
+  align-items: center;
+  .nav-link {
+    text-decoration: none;
+    color: white;
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+}
+.button {
+  background-color: $primary-color;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 15px; 
+  transition: 0.3s;
+    &:hover {
+        cursor: pointer;
+        background-color: $gradient-end;
+        scale: 1.1;
+    }
+}
+.landing-card {
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  padding: 10px 30vw;
+  .landing-card-name,
+  .landing-card-description {
+    width: 50%;
+    text-align: center;
+  }
+  h1 {
+    font-size: 5rem;
+    margin: 0;
+  }
+  animation: text-up 1s ease 1000ms backwards;
+}
+@keyframes text-up {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0px);
+    }
+}
+@media only screen and (max-width: 768px) {
+  .nav-content {
+    padding: 20px 5vw;
+    img {
+      width: 50px;
+      height: 50px;
+    }
+    flex-direction: column;
+    .navbar-middle {
+      margin-bottom: 10px;
+    }
+  }
+  .button {
+    font-size: 10px;
+  }
+  .landing-card {
+    padding: 10px 5vw;
+  }
+}
+.landing-card-name .my-name {
+  font-weight: bold;
+  background: -webkit-linear-gradient(45deg, rgba(32,152,239,1) 0%, rgba(78,45,209,1) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
