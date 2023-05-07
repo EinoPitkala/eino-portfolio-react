@@ -4,7 +4,7 @@ export default function LandingCard() {
   return (
     <div className="landing-card">
         <div className="landing-card-name">
-            <h1>Hi, I'm <span className='my-name'>Eino Pitkälä</span></h1>
+            <h1>Hi, I'm <br /> <span className='my-name'>Eino Pitkälä</span></h1>
             
         </div>
         <div className="landing-card-description">
