@@ -12,6 +12,18 @@ body {
   font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
+.link {
+  text-decoration: none;
+  color: $text-color;
+  background-color: rgb(63, 63, 63);
+  padding: 6px;
+  border-radius: 17px;
+  transition: 0.3s;
+  &:hover {
+    background-color: rgb(92, 92, 92);
+    color: white;
+  }
+}
 .navbar {
   width: 100%;
   background-color: $bg-color;
@@ -57,24 +69,61 @@ body {
   }
 }
 .landing-card {
-  margin-top: 100px;
-  padding: 10px 10vw;
-  align-items: center;
+  margin-top: 3rem;
+  padding: 10px 30vw;
+  align-items: flex-start;
+  justify-content: center;
   display: flex;
   flex-direction: column;
-  .landing-card-name,
-  .landing-card-description {
-    width: 70%;
-  }
   h1 {
-    font-size: 5em;
-    margin: 0;
+    font-size: 4em;
+    margin-bottom: 30px;
   }
   p {
     font-size: 2em;
     margin: 0;
   }
   animation: text-up 1s ease 1000ms backwards;
+}
+.footer {
+  background-color: $light-color;
+  margin-top: 10em;
+  .footer-content {
+    padding: 20px 20vw;
+    align-items: center;
+    .footer-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .footer-logo {
+      width: 150px;
+      height: 150px;
+      opacity: 0.8;
+      transition: 0.3s;
+      cursor: pointer;
+      &:hover {
+        opacity: 1;
+      }
+    }
+    .footer-bottom {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    ul {
+      list-style: none;
+      margin: 0px;
+      padding: 0px;
+      li {
+        margin-bottom: 15px;
+      }
+    }
+    .footer-right-links {
+      text-align: right;
+    }
+  }
+
 }
 
 @keyframes text-up {
@@ -105,11 +154,14 @@ body {
   .landing-card {
     padding: 10px 5vw;
     h1 {
-      font-size: 10vw;
+      font-size: 3em;
     }
     p {
-      font-size: 3vw;
+      font-size: 1.5em;
     }
+  }
+  .footer-content {
+    padding: 10px 2vw !important;
   }
 }
 .landing-card-name .my-name {
@@ -126,11 +178,13 @@ body {
 .projects {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   margin: 10px 25vw;
   margin-top: 10rem;
   .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 20px;
     .project-card {
       border: 2px solid $light-color;
