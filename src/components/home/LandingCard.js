@@ -8,7 +8,7 @@ export default function LandingCard() {
             
         </div>
         <div className="landing-card-description">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus saepe, assumenda quaerat aperiam fugiat, reiciendis sed laboriosam, nemo blanditiis nobis dignissimos. Minima fuga placeat laboriosam inventore ipsum veniam error suscipit.</p>
+            <p>14 year old entrepreneur, Front-End developer and tech nerd.</p>
         </div>
     </div>
   )

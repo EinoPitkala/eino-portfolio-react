@@ -68,6 +68,22 @@ body {
     scale: 1.05;
   }
 }
+.project-link {
+  text-decoration: none;
+  color: $text-color;
+  background-color: rgb(63, 63, 63);
+  padding: 6px;
+  border-radius: 17px;
+  margin-bottom: 10rem;
+  transition: 0.3s;
+  &:hover {
+    background-color: rgb(92, 92, 92);
+    color: white;
+  }
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
 .landing-card {
   margin-top: 3rem;
   padding: 10px 30vw;
@@ -205,6 +221,10 @@ body {
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
+      }
+      h5 {
+        font-size: 0.8em;
+        margin: 0;
       }
     }
   }

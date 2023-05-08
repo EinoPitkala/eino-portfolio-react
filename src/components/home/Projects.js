@@ -3,24 +3,20 @@ import React from "react";
 export default function Projects() {
   const projects = [
     {
-      projectName: "Projekti 1",
+      projectName: "eino-it-www",
+      projectLanguage: "ReactJS, CSS",
       projectDescription:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam distinctio blanditiis quia provident omnis id, eius quis ipsa dolor debitis eligendi voluptates suscipit eaque sint aliquid, perspiciatis exercitationem, commodi incidunt.",
+        "Website for my business. Made with ReactJS and CSS. Static website, no backend.",
+      projectLink: "https://eino-it.fi",
+      projectSource: "https://github.com/seoneizz/eino-it-www",
     },
     {
-      projectName: "Projekti 2",
+      projectName: "eino-portfolio",
+      projectLanguage: "ReactJS, SCSS",
+      projectLink: "https://eino.pitkala.net",
+      projectSource: "https://github.com/seoneizz/eino.pitkala.net",
       projectDescription:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore nemo natus assumenda ad magnam ipsum molestiae optio corporis rerum? Ullam id tenetur recusandae ipsa inventore sed ducimus in, rerum unde.",
-    },
-    {
-      projectName: "Projekti 3",
-      projectDescription:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam architecto at possimus harum, explicabo exercitationem delectus! Voluptatibus eligendi exercitationem pariatur, animi minima dolorem iusto dicta sunt fugiat, perferendis deleniti repudiandae.",
-    },
-    {
-      projectName: "Projekti 4",
-      projectDescription:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam architecto at possimus harum, explicabo exercitationem delectus! Voluptatibus eligendi exercitationem pariatur, animi minima dolorem iusto dicta sunt fugiat, perferendis deleniti repudiandae.",
+        "My personal website. Made with ReactJS and SCSS. Static website, no backend.",
     },
   ];
   return (
@@ -30,8 +26,11 @@ export default function Projects() {
         {projects.map((project, index) => {
           return (
             <div className="project-card" key={index}>
+              <h5>{project.projectLanguage}</h5>
               <h3>{project.projectName}</h3>
               <p>{project.projectDescription}</p>
+              <a className="project-link" href={project.projectLink}>{project.projectLink}</a>
+              <a className="project-link" href={project.projectSource}>Source</a>
             </div>
           );
         })}
