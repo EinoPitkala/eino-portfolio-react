@@ -8,13 +8,13 @@ export default function Projects() {
       projectDescription:
         "Website for my business. Made with ReactJS and CSS. Static website, no backend.",
       projectLink: "https://eino-it.fi",
-      projectSource: "https://github.com/seoneizz/eino-it-www",
+      projectSource: "https://github.com/EinoPitkala/eino-it-www",
     },
     {
-      projectName: "eino-portfolio",
+      projectName: "eino-react-portfolio",
       projectLanguage: "ReactJS, SCSS",
       projectLink: "https://eino.pitkala.net",
-      projectSource: "https://github.com/seoneizz/eino.pitkala.net",
+      projectSource: "https://github.com/EinoPitkala/eino.pitkala.net",
       projectDescription:
         "My personal website. Made with ReactJS and SCSS. Static website, no backend.",
     },
