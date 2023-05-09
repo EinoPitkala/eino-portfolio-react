@@ -1,7 +1,7 @@
 import React from "react";
 import { FaApple, FaWindows } from "react-icons/fa";
 
-export default function MyTech() {
+export const MyTech = () => {
   const tech = [
     { name: "MacBook Air 2020 M1", icon: "FaApple", description: "First time using Mac. Love it. Nice to develop on. " },
     {

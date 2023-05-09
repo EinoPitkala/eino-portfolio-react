@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function LandingCard() {
+const LandingCard = () => {
   return (
     <div className="landing-card">
         <div className="landing-card-name">
@@ -13,3 +13,4 @@ export default function LandingCard() {
     </div>
   )
 }
+export default LandingCard

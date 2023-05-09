@@ -11,7 +11,7 @@ const images = importAll(
 
 
 
-export default function Projects() {
+export const Projects = () => {
   const projects = [
     {
       projectName: "eino-it-www",
@@ -52,3 +52,7 @@ export default function Projects() {
     </div>
   );
 }
+export default Projects
+
+
+

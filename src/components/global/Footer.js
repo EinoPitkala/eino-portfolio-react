@@ -1,6 +1,6 @@
 import React from "react";
 import Logo from "../../assets/images/logo.svg";
-export default function Footer() {
+const Footer = () => {
   return (
     <div className="footer">
       <div className="footer-content">
@@ -60,3 +60,4 @@ export default function Footer() {
     </div>
   );
 }
+export default Footer
