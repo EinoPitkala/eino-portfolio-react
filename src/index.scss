@@ -36,7 +36,7 @@ body {
     width: 100px;
     height: 100px;
   }
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 
   .nav-link {
@@ -155,14 +155,6 @@ body {
 @media only screen and (max-width: 829px) {
   .nav-content {
     padding: 20px 5vw;
-    img {
-      width: 50px;
-      height: 50px;
-    }
-    flex-direction: column;
-    .navbar-middle {
-      margin-bottom: 10px;
-    }
   }
   .button {
     font-size: 10px;
@@ -198,6 +190,7 @@ body {
   justify-content: center;
   margin: 10px 25vw;
   margin-top: 10rem;
+  animation: text-up 1s ease 1500ms backwards;
   .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -225,6 +218,35 @@ body {
       h5 {
         font-size: 0.8em;
         margin: 0;
+      }
+      img {
+        width: 100%;
+        border-radius: 10px;
+      }
+    }
+  }
+}
+.my-tech {
+  margin: 10px 25vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .tech-grid {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+    .tech-card {
+      border: 2px solid $light-color;
+      padding: 20px;
+      border-radius: 10px;
+      transition: 0.3s;
+      &:hover {
+        box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.75);
+      }
+      h3 {
+        font-weight: bold;
+        font-size: 2em;
       }
     }
   }

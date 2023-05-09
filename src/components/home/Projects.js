@@ -1,4 +1,15 @@
 import React from "react";
+const importAll = require =>
+  require.keys().reduce((acc, next) => {
+    acc[next.replace("./", "")] = require(next);
+    return acc;
+  }, {});
+
+const images = importAll(
+  require.context("../../assets/images", false, /\.(png|jpe?g|svg)$/)
+);
+
+
 
 export default function Projects() {
   const projects = [
@@ -9,6 +20,7 @@ export default function Projects() {
         "Website for my business. Made with ReactJS and CSS. Static website, no backend.",
       projectLink: "https://eino-it.fi",
       projectSource: "https://github.com/EinoPitkala/eino-it-www",
+      projectImage: "eino-it.png"
     },
     {
       projectName: "eino-react-portfolio",
@@ -17,6 +29,7 @@ export default function Projects() {
       projectSource: "https://github.com/EinoPitkala/eino.pitkala.net",
       projectDescription:
         "My personal website. Made with ReactJS and SCSS. Static website, no backend.",
+      projectImage: "eino-portfolio.png",
     },
   ];
   return (
@@ -29,6 +42,7 @@ export default function Projects() {
               <h5>{project.projectLanguage}</h5>
               <h3>{project.projectName}</h3>
               <p>{project.projectDescription}</p>
+              <img src={images[project.projectImage]} alt="" />
               <a className="project-link" href={project.projectLink}>{project.projectLink}</a>
               <a className="project-link" href={project.projectSource}>Source</a>
             </div>
