@@ -4,7 +4,7 @@ import React from 'react'
 // import MyTech from '../components/home/MyTech'
 // MyTech is commented out because it's not finished yet.
 
-export default function Home() {
+const Home = () => {
   return (
     <>
         <LandingCard />
@@ -13,3 +13,4 @@ export default function Home() {
     </>
   )
 }
+export default Home
