@@ -1,4 +1,5 @@
 import React from 'react'
+import Button from '../../modules/Button'
 
 const LandingCard = () => {
   return (
@@ -9,6 +10,11 @@ const LandingCard = () => {
         </div>
         <div className="landing-card-description">
             <p>14 year old entrepreneur, Front-End developer and tech nerd.</p>
+        </div>
+        <div className="landing-card-buttons">
+            <Button href="/projects" content="Projects"/>
+            <Button href="/clients" content="Clients"/>
+            <Button href="/info" content="Info"/>
         </div>
     </div>
   )

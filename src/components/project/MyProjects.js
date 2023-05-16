@@ -9,7 +9,7 @@ const images = importAll(
   require.context("../../assets/images", false, /\.(png|jpe?g|svg)$/)
 );
 
-export const Projects = () => {
+const Projects = () => {
   const ownProjects = [
     {
       projectName: "eino-it-www",
@@ -51,7 +51,6 @@ export const Projects = () => {
           );
         })}
       </div>
-      
     </div>
   );
 };

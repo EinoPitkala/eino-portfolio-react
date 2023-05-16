@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 const importAll = (require) =>
   require.keys().reduce((acc, next) => {
     acc[next.replace("./", "")] = require(next);
@@ -9,27 +9,26 @@ const images = importAll(
   require.context("../../assets/images", false, /\.(png|jpe?g|svg)$/)
 );
 
-export const ClientProjects = () => {
-    const clientProjects = [
-        {
-          projectName: "Suomen Ensihoitoalan Liitto ry",
-          projectLanguage: "Wordpress",
-          projectDescription:
-            "I'm administrating SEHL's website. Website is not made by me.",
-          projectLink: "https://sehl.fi",
-          projectImage: "sehl.png",
-        },
-        {
-          projectName: "Hanesbakery",
-          projectLanguage: "Wordpress",
-          projectDescription: "Website for local bakery. Website is WIP.",
-          projectLink: "https://hanesbakery.fi",
-          projectImage: "wip.png",
-        },
-      ];
-    return (
+const ClientProjects = () => {
+  const clientProjects = [
+    {
+      projectName: "Suomen Ensihoitoalan Liitto ry",
+      projectLanguage: "Wordpress",
+      projectDescription:
+        "I'm administrating SEHL's website. Website is not made by me.",
+      projectLink: "https://sehl.fi",
+      projectImage: "sehl.png",
+    },
+    {
+      projectName: "Hanesbakery",
+      projectLanguage: "Wordpress",
+      projectDescription: "Website for local bakery. Website is WIP.",
+      projectLink: "https://hanesbakery.fi",
+      projectImage: "wip.png",
+    },
+  ];
+  return (
     <div className="projects">
-        <h1>My clients</h1>
       <div className="projects-grid">
         {clientProjects.map((project, index) => {
           return (
@@ -46,5 +45,6 @@ export const ClientProjects = () => {
         })}
       </div>
     </div>
-  )
-}
+  );
+};
+export default ClientProjects

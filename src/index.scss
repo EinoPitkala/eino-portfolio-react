@@ -99,7 +99,25 @@ body {
     font-size: 2em;
     margin: 0;
   }
-  animation: text-up 1s ease 1000ms backwards;
+  .landing-card-buttons {
+    margin-top: 28px;
+    .button:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+  animation: text-up 1s ease 300ms backwards;
+}
+.header-content {
+  margin: 10px 25vw;
+  animation: text-up 1s ease 300ms backwards;
+  h1 {
+    font-size: 3em;
+  }
+  p {
+    font-size: 1.5em;
+    padding: 0;
+    margin: 0;
+  }
 }
 .footer {
   background-color: $light-color;
@@ -172,7 +190,7 @@ body {
     padding: 10px 2vw !important;
   }
 }
-.landing-card-name .my-name {
+.landing-card-name .my-name, .color-text {
   font-weight: bold;
   background: -webkit-linear-gradient(
     45deg,
@@ -190,7 +208,7 @@ body {
   justify-content: center;
   margin: 10px 25vw;
   margin-top: 10rem;
-  animation: text-up 1s ease 1500ms backwards;
+  animation: text-up 1s ease 600ms backwards;
   .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
