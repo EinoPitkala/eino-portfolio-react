@@ -322,3 +322,40 @@ body {
     font-size: 1.5em;
   }
 }
+
+.testaustime-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3,minmax(0,1fr));
+  grid-gap: 10px;
+  .testaustime-stats-card {
+    border: 2px solid $light-color;
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+    &:hover {
+      box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.75);
+    }
+    h3 {
+      font-weight: bold;
+      font-size: 1.3em;
+      font-family: $monospace-font;
+      background: -webkit-linear-gradient(
+        45deg,
+        rgba(32, 152, 239, 1) 0%,
+        rgba(78, 45, 209, 1) 100%
+      );
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-transform: capitalize;
+    }
+    h5 {
+      font-size: 0.8em;
+      margin: 0;
+    }
+    img {
+      width: 100%;
+      border-radius: 10px;
+    }
+  }
+}
