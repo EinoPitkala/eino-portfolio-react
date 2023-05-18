@@ -8,7 +8,7 @@ const LandingCard = () => {
             
         </div>
         <div className="landing-card-description">
-            <p>14 year old entrepreneur, Front-End developer and tech nerd.</p>
+            <p>14 year old entrepreneur, future Front-End developer and tech nerd.</p>
         </div>
     </div>
   )

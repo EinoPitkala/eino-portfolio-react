@@ -3,7 +3,11 @@ import { FaApple, FaWindows } from "react-icons/fa";
 
 export const MyTech = () => {
   const tech = [
-    { name: "MacBook Air 2020 M1", icon: "FaApple", description: "First time using Mac. Love it. Nice to develop on. " },
+    {
+      name: "MacBook Air 2020 M1",
+      icon: "FaApple",
+      description: "First time using Mac. Love it. Nice to develop on. ",
+    },
     {
       name: "ThinkPad T480",
       icon: "FaWindows",
@@ -28,4 +32,4 @@ export const MyTech = () => {
       </div>
     </div>
   );
-}
+};

@@ -49,7 +49,7 @@ export const Projects = () => {
   ];
   return (
     <div className="projects">
-      <h1>My projects</h1>
+      <h2>My projects</h2>
       <div className="projects-grid">
         {ownProjects.map((project, index) => {
           return (
@@ -68,7 +68,7 @@ export const Projects = () => {
           );
         })}
       </div>
-      <h1>My clients</h1>
+      <h2>My clients</h2>
       <div className="projects-grid">
         {clientProjects.map((project, index) => {
           return (
