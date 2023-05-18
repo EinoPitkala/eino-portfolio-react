@@ -313,6 +313,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  animation: text-side 1s ease 1399ms backwards;
   h2 {
     font-size: 2em;
     font-family: $monospace-font;
