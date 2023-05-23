@@ -23,8 +23,8 @@ export const Projects = () => {
     {
       projectName: "eino-react-portfolio",
       projectLanguage: "ReactJS, SCSS",
-      projectLink: "https://eino.pitkala.net",
-      projectSource: "https://github.com/EinoPitkala/eino.pitkala.net",
+      projectLink: "https://eino.bio",
+      projectSource: "https://github.com/EinoPitkala/eino-portfolio-react",
       projectDescription:
         "My personal website. Made with ReactJS and SCSS. Static website, no backend.",
       projectImage: "eino-portfolio.png",

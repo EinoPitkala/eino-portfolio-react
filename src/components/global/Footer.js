@@ -12,8 +12,8 @@ const Footer = () => {
             <h2>Eino Pitkälä</h2>
             <ul>
               <li>
-                <a className="link" href="mailto:eino@pitkala.net">
-                  eino@pitkala.net
+                <a className="link" href="mailto:me@eino.bio">
+                  me@eino.bio
                 </a>
               </li>
               <li>
